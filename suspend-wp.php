@@ -34,7 +34,7 @@ class SuspendWP {
         add_action( 'wp_loaded', array( $this, 'suspend_wp' ) );
         
         // register admin styles and scripts
-        add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqeueu' ) );
+        add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue' ) );
     }
 
     public function activate() {
@@ -49,13 +49,13 @@ class SuspendWP {
         SuspendWPDeactivate::deactivate();
     }
 
-    protected function admin_enqueue() {
+    public function admin_enqueue() {
         // enqueue plugin admin styles and scripts
         wp_enqueue_style( 'suspendwp_admin_styles', plugins_url( 'assets/css/admin.css', __FILE__ ) );
         wp_enqueue_script( 'suspendwp_admin_scripts', plugins_url( 'assets/js/admin.js', __FILE__ ) );
     }
 
-    private function suspend_wp() {
+    public function suspend_wp() {
         // main method of suspendwp
 
         global $pagenow;
