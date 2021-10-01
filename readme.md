@@ -34,6 +34,8 @@ To be able to start using this plugin just [download the latest release here](ht
 
 Contributions are welcome, create a pull request to this repo and I will review your code. Please consider to submit your pull request to the ```dev``` branch. Thank you!
 
+Read the project's [contributing guide](./contributing.md) for more info.
+
 ## 💬 Discussions
 
 For any questions, suggestions, ideas, or simply you want to share your experience in using this project, feel free to share and discuss it to the [community](https://github.com/warengonzaga/suspend-wp/discussions)!
